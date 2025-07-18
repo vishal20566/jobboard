@@ -1,0 +1,71 @@
+.main-content {
+  flex: 1;
+  max-width: 700px;
+  margin-left: 3vw;
+  z-index: 1;
+}
+
+.logo-bg {
+  position: fixed;
+  top: 50%;
+  right: -17vw;
+  left: auto;
+  transform: translateY(-50%);
+  z-index: 0;
+  /* opacity: 0.5; */
+  pointer-events: none;
+  width: 80vw;
+  height: 1000px;
+  background: url('./assets/job.png') no-repeat center center;
+  background-size: contain;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f7f9fb 0%, #e3eafc 100%);
+  margin: 0;
+  padding: 0;
+  color: #222;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width: 600px) {
+  .logo-bg {
+    display: block;
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    top: 10px;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    opacity: 0.15;
+    z-index: 1;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  form {
+    max-width: 100% !important;
+  }
+  input, textarea, button {
+    font-size: 1rem !important;
+  }
+}
