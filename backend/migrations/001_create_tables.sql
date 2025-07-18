@@ -1,0 +1,18 @@
+CREATE TABLE jobs (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
+  company VARCHAR(255) NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  posted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE applications (
+  id SERIAL PRIMARY KEY,
+  job_id INTEGER REFERENCES jobs(id),
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  resume_link TEXT NOT NULL,
+  cover_letter TEXT NOT NULL,
+  applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
