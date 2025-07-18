@@ -13,7 +13,7 @@ const AdminApplications: React.FC = () => {
   useEffect(() => {
     if (!loggedIn) return;
     setLoading(true);
-    axios.get('http://localhost:5001/applications', {
+    axios.get(`${process.env.REACT_APP_API_URL}/applications`, {
       headers: { 'x-admin-token': localStorage.getItem('admin_token') || '' }
     })
       .then(res => {

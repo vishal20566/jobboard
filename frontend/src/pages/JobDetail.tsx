@@ -9,7 +9,7 @@ const JobDetail: React.FC = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get(`http://localhost:5001/jobs/${id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/jobs/${id}`)
       .then(res => {
         setJob(res.data);
         setLoading(false);

@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5001/jobs')
+    axios.get(`${process.env.REACT_APP_API_URL}/jobs`)
       .then(res => {
         setJobs(res.data);
         setLoading(false);
