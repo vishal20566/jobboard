@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const jobTypes = ['All', 'Full-time', 'Part-time', 'Remote'];
+const jobTypes = ['All', 'Full-time', 'Part-time', 'Internship', 'Remote'];
 
 const Home: React.FC = () => {
   const [jobs, setJobs] = useState<any[]>([]);

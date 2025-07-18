@@ -49,7 +49,8 @@ A simple job board app with Node.js, Express, PostgreSQL, and React.
 
 ## Live Demo
 
-[Live Demo Link](https://your-demo-link.com)
+- **Frontend:** [https://jobboard-fawn.vercel.app/](https://jobboard-fawn.vercel.app/)
+- **Backend API:** [https://jobboard-backend-lfb2.onrender.com](https://jobboard-backend-lfb2.onrender.com)
 
 ---
 
